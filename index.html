@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestyvia | Mantenimiento</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f1e3d">
+  <meta name="description" content="Gestyvia no está disponible temporalmente por tareas de mantenimiento. Volveremos en breve.">
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f1e3d'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23c4933a'%3EG%3C/text%3E%3C/svg%3E" rel="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:100%;min-height:100%}
+    body{
+      background:#ffffff;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      color:#0f1e3d;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      background:
+        radial-gradient(ellipse at 25% 35%,rgba(42,90,160,0.05) 0%,transparent 60%),
+        radial-gradient(ellipse at 78% 68%,rgba(196,147,58,0.05) 0%,transparent 55%);
+      pointer-events:none;
+    }
+    .top-line{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      height:2px;
+      background:linear-gradient(90deg,transparent,rgba(15,30,61,0.12),transparent);
+    }
+    .gold-line{
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      height:2px;
+      background:linear-gradient(90deg,transparent,rgba(196,147,58,0.3),transparent);
+    }
+    .wrapper{
+      width:min(760px,100%);
+      position:relative;
+      z-index:1;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      animation:fadeIn 1.2s ease both;
+    }
+    .logo{
+      width:min(340px,68vw);
+      height:auto;
+      display:block;
+      margin:0 auto 34px;
+    }
+    .eyebrow{
+      font-family:'DM Sans',sans-serif;
+      font-size:.68rem;
+      font-weight:400;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:rgba(196,147,58,.82);
+      margin-bottom:20px;
+    }
+    h1{
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(2.2rem,6vw,4.7rem);
+      font-weight:400;
+      line-height:.98;
+      color:#0f1e3d;
+      margin-bottom:24px;
+      letter-spacing:.01em;
+    }
+    .text{
+      max-width:570px;
+      font-family:'DM Sans',sans-serif;
+      font-size:clamp(.98rem,2vw,1.12rem);
+      font-weight:300;
+      line-height:1.85;
+      color:rgba(15,30,61,.72);
+      margin-bottom:30px;
+    }
+    .contact{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:13px 22px;
+      margin-bottom:34px;
+      border:1px solid rgba(196,147,58,.42);
+      border-radius:999px;
+      font-family:'DM Sans',sans-serif;
+      font-size:.82rem;
+      font-weight:400;
+      letter-spacing:.04em;
+      color:#0f1e3d;
+      text-decoration:none;
+      background:rgba(255,255,255,.58);
+      transition:transform .25s ease,border-color .25s ease,background .25s ease;
+    }
+    .contact:hover{
+      transform:translateY(-2px);
+      border-color:rgba(196,147,58,.75);
+      background:rgba(255,255,255,.86);
+    }
+    .status{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-family:'DM Sans',sans-serif;
+      font-size:.72rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:rgba(15,30,61,.66);
+    }
+    .status::before,
+    .status::after{
+      content:'';
+      width:34px;
+      height:1px;
+      background:rgba(196,147,58,.52);
+    }
+    .diamond{
+      width:42px;
+      height:42px;
+      margin:0 auto 26px;
+      transform:rotate(45deg);
+      border:1px solid rgba(196,147,58,.32);
+      position:relative;
+    }
+    .diamond::after{
+      content:'';
+      position:absolute;
+      inset:12px;
+      border:1px solid rgba(15,30,61,.12);
+    }
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(10px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    @media (max-width:768px){
+      body{padding:24px}
+      .logo{width:min(310px,78vw);margin-bottom:28px}
+      .eyebrow{font-size:.64rem;letter-spacing:.17em}
+      .text{max-width:360px;font-size:.95rem;line-height:1.75}
+      .contact{font-size:.76rem;padding:12px 18px;margin-bottom:30px}
+      .status{font-size:.63rem;letter-spacing:.13em}
+      .status::before,.status::after{width:22px}
+    }
+    @media (max-width:420px){
+      .logo{width:min(260px,82vw)}
+      h1{font-size:2.45rem}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-line"></div>
+
+  <main class="wrapper" aria-labelledby="maintenance-title">
+    <img src="logo-gestyvia.png" alt="Gestyvia" class="logo">
+
+    <div class="diamond" aria-hidden="true"></div>
+
+    <p class="eyebrow">Mantenimiento temporal</p>
+
+    <h1 id="maintenance-title">Estamos mejorando Gestyvia</h1>
+
+    <p class="text">
+      Estamos realizando mejoras para ofrecer una experiencia aún más cuidada y eficiente.
+      Estaremos de vuelta muy pronto. Gracias por tu paciencia.
+    </p>
+
+    <a class="contact" href="mailto:gestyvia@outlook.com" aria-label="Contactar con Gestyvia por correo electrónico">
+      gestyvia@outlook.com
+    </a>
+
+    <div class="status">Volveremos en breve</div>
+  </main>
+
+  <div class="gold-line"></div>
+</body>
+</html>
