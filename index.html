@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Gestyvia | Automatización inteligente para empresas</title>
+<meta content="https://www.gestyvia.com/" property="og:url"/>
+<meta content="Gestyvia | Automatización inteligente para empresas" property="og:title"/>
+<meta content="Menos tareas repetitivas. Más tiempo para hacer crecer su negocio." property="og:description"/>
+<meta content="https://www.gestyvia.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="Gestyvia" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Gestyvia | Automatización inteligente para empresas" name="twitter:title"/>
+<meta content="Menos tareas repetitivas. Más tiempo para hacer crecer su negocio." name="twitter:description"/>
+<meta content="https://www.gestyvia.com/og-image.png" name="twitter:image"/>
+<link href="https://www.gestyvia.com/" rel="canonical"/>
+<meta content="#0f1e3d" name="theme-color"/>
+<meta content="index,follow" name="robots"/><meta content="Gestyvia automatiza procesos administrativos para empresas, asesorías, gestorías y despachos mediante inteligencia artificial. Ahorra tiempo, reduce costes y mejora la productividad." name="description"/><meta content="Gestyvia" name="author"/><link href="https://www.gestyvia.com/" hreflang="es-es" rel="alternate"/><link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f1e3d'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23c4933a'%3EG%3C/text%3E%3C/svg%3E" rel="icon"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Gestyvia","url":"https://www.gestyvia.com/","logo":"https://www.gestyvia.com/logo-gestyvia.png","description":"Gestyvia automatiza procesos administrativos para empresas, asesorías, gestorías y despachos mediante inteligencia artificial.","areaServed":"ES"}</script><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&amp;family=DM+Sans:wght@300;400&amp;display=swap" rel="stylesheet"/><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%}body{background:#ffffff;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;overflow:hidden;cursor:pointer}body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 25% 35%,rgba(42,90,160,0.05) 0%,transparent 60%),radial-gradient(ellipse at 78% 68%,rgba(196,147,58,0.05) 0%,transparent 55%);pointer-events:none}.overlay{position:fixed;inset:0;z-index:100;background:#ffffff;opacity:0;pointer-events:none;transition:opacity 0.7s ease}.overlay.active{opacity:1;pointer-events:all}.wrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;position:relative;z-index:1;animation:fadeIn 1.2s ease both;transition:transform 0.9s cubic-bezier(0.4,0,0.2,1),opacity 0.7s ease}.wrapper.exit{transform:scale(1.06);opacity:0}.logo-link{display:block;text-decoration:none}.logo-link img{width:min(380px,68vw);height:auto;display:block;transition:transform 0.9s cubic-bezier(0.4,0,0.2,1)}.tagline{font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.8vw,1rem);font-weight:500;color:rgba(15,30,61,0.75);letter-spacing:0.22em;text-transform:uppercase;text-align:center;animation:fadeIn 1.6s 0.3s ease both;transition:opacity 0.4s ease}.enter{margin-top:4px;display:flex;align-items:center;gap:10px;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(196,147,58,0.7);text-decoration:none;animation:fadeIn 2s 0.6s ease both;transition:opacity 0.4s ease}.enter::after{content:'';display:block;width:28px;height:1px;background:currentColor;transition:width 0.3s}@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.gold-line{position:fixed;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(196,147,58,0.3),transparent);transition:opacity 0.5s ease}.top-line{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(15,30,61,0.12),transparent)}img{max-width:100%;height:auto}body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}@media (max-width:768px){body{padding:24px;overflow:hidden}.wrapper{gap:24px;width:100%}.logo-link img{width:min(320px,78vw)}.tagline{font-size:.78rem;letter-spacing:.16em;line-height:1.6;max-width:320px}.enter{font-size:.66rem;letter-spacing:.14em}}@media (max-width:420px){.logo-link img{width:min(260px,82vw)}.tagline{font-size:.72rem;letter-spacing:.12em}.enter::after{width:20px}}
+
+
+/* Gestyvia · Transiciones premium entre páginas */
+.gv-page-transition{
+    position:fixed;
+    inset:0;
+    z-index:2147483646;
+    pointer-events:none;
+    background:
+        radial-gradient(ellipse at 50% 38%, rgba(196,147,58,.105) 0%, transparent 34%),
+        radial-gradient(ellipse at 30% 70%, rgba(42,90,160,.075) 0%, transparent 46%),
+        #f8f7f4;
+    transform:translateY(100%);
+    transition:transform .78s cubic-bezier(.76,0,.24,1);
+    will-change:transform;
+}
+.gv-page-transition::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:min(360px,54vw);
+    height:1px;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(90deg,transparent,rgba(196,147,58,.7),transparent);
+    opacity:.72;
+}
+.gv-page-transition::after{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:calc(50% + 18px);
+    width:42px;
+    height:42px;
+    transform:translate(-50%,-50%) rotate(45deg);
+    border:1px solid rgba(196,147,58,.28);
+    opacity:.48;
+}
+.gv-page-transition.is-active{transform:translateY(0)}
+.gv-page-transition.is-entering{
+    transform:translateY(0);
+    animation:gvPremiumReveal .92s cubic-bezier(.76,0,.24,1) forwards;
+}
+@keyframes gvPremiumReveal{to{transform:translateY(-100%)}}
+@media (prefers-reduced-motion:reduce){
+    .gv-page-transition{display:none!important}
+}
+
+/* Transición premium entre páginas */
+.page-transition{
+    position:fixed;
+    inset:0;
+    background:#f8f7f4;
+    z-index:99999;
+    transform:translateY(100%);
+    opacity:0;
+    pointer-events:none;
+    transition:
+        transform 1.15s cubic-bezier(.77,0,.175,1),
+        opacity 1.15s ease;
+}
+.page-transition.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:all;
+}
+.page-transition.exit{
+    transform:translateY(-100%);
+    opacity:0;
+}
+
+
+/* Aviso de cookies compacto */
+.cookie-banner{
+    position:fixed;
+    left:50%;
+    bottom:18px;
+    z-index:2147483647;
+    width:min(560px,calc(100vw - 32px));
+    max-height:calc(100vh - 36px);
+    overflow:auto;
+    transform:translate(-50%,12px);
+    background:rgba(255,255,255,.965);
+    border:1px solid rgba(15,30,61,.10);
+    border-left:3px solid rgba(196,147,58,.92);
+    border-radius:10px;
+    box-shadow:0 14px 38px rgba(15,30,61,.14);
+    backdrop-filter:blur(14px);
+    padding:14px 16px;
+    opacity:0;
+    transition:opacity .3s ease,transform .3s ease;
+    font-family:'DM Sans',sans-serif;
+    color:#0f1e3d;
+    cursor:default;
+}
+.cookie-banner.is-visible{opacity:1;transform:translate(-50%,0)}
+.cookie-banner[hidden]{display:none!important}
+.cookie-banner h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.05rem;
+    font-weight:600;
+    line-height:1.15;
+    color:#0f1e3d;
+    margin:0 0 4px;
+}
+.cookie-banner p{
+    font-size:.74rem;
+    line-height:1.5;
+    color:rgba(15,30,61,.62);
+    font-weight:300;
+    margin:0;
+}
+.cookie-banner a{
+    color:#0f1e3d;
+    text-decoration:underline;
+    text-underline-offset:3px;
+}
+.cookie-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+    margin-top:10px;
+    flex-wrap:wrap;
+}
+.cookie-btn{
+    border:none;
+    border-radius:4px;
+    padding:8px 12px;
+    font-family:'DM Sans',sans-serif;
+    font-size:.68rem;
+    font-weight:600;
+    letter-spacing:.055em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background .2s,color .2s,border-color .2s,transform .15s;
+    min-height:34px;
+}
+.cookie-btn:hover{transform:translateY(-1px)}
+.cookie-btn.reject{
+    background:transparent;
+    color:rgba(15,30,61,.72);
+    border:1px solid rgba(15,30,61,.16);
+}
+.cookie-btn.reject:hover{
+    border-color:#0f1e3d;
+    color:#0f1e3d;
+}
+.cookie-btn.accept{
+    background:#0f1e3d;
+    color:#f8f7f4;
+}
+.cookie-btn.accept:hover{background:#2a5aa0}
+.cookie-btn.configure{
+    background:rgba(196,147,58,.10);
+    color:#0f1e3d;
+    border:1px solid rgba(196,147,58,.34);
+}
+.cookie-btn.configure:hover{
+    background:rgba(196,147,58,.16);
+    border-color:rgba(196,147,58,.54);
+}
+.cookie-preferences{
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1px solid rgba(15,30,61,.08);
+    display:grid;
+    gap:8px;
+}
+.cookie-preferences[hidden]{display:none!important}
+.cookie-option{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:8px 10px;
+    border:1px solid rgba(15,30,61,.08);
+    border-radius:6px;
+    background:rgba(248,247,244,.58);
+}
+.cookie-option strong{
+    display:block;
+    font-size:.72rem;
+    color:#0f1e3d;
+    margin-bottom:1px;
+}
+.cookie-option small{
+    display:block;
+    font-size:.66rem;
+    line-height:1.35;
+    color:rgba(15,30,61,.56);
+    font-weight:300;
+}
+.cookie-pill{
+    flex:0 0 auto;
+    font-size:.56rem;
+    letter-spacing:.075em;
+    text-transform:uppercase;
+    color:rgba(15,30,61,.48);
+    border:1px solid rgba(15,30,61,.12);
+    border-radius:999px;
+    padding:5px 7px;
+    white-space:nowrap;
+}
+.cookie-option input{
+    width:17px;
+    height:17px;
+    accent-color:#0f1e3d;
+    flex:0 0 auto;
+}
+.cookie-save{
+    justify-self:end;
+    margin-top:0;
+}
+
+.cookie-banner.is-fixed{
+    opacity:1;
+    transform:translate(-50%,0);
+}
+body.cookie-choice-open .logo-link,
+body.cookie-choice-open .enter,
+body.cookie-choice-open .wrapper{
+    pointer-events:none;
+}
+body.cookie-choice-open .cookie-banner,
+body.cookie-choice-open .cookie-banner *{
+    pointer-events:auto;
+}
+@media(max-width:560px){
+    .cookie-banner{
+        bottom:10px;
+        width:calc(100vw - 20px);
+        padding:11px 12px;
+        border-radius:8px;
+        box-shadow:0 10px 28px rgba(15,30,61,.14);
+    }
+    .cookie-banner h2{
+        font-size:.94rem;
+        margin-bottom:2px;
+    }
+    .cookie-banner p{
+        font-size:.68rem;
+        line-height:1.42;
+    }
+    .cookie-actions{
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:6px;
+        margin-top:8px;
+    }
+    .cookie-btn{
+        width:100%;
+        padding:7px 6px;
+        min-height:32px;
+        font-size:.58rem;
+        letter-spacing:.04em;
+    }
+    .cookie-option{
+        padding:7px 8px;
+        gap:8px;
+    }
+    .cookie-option strong{font-size:.68rem}
+    .cookie-option small{font-size:.61rem}
+    .cookie-pill{font-size:.5rem;padding:4px 6px}
+    .cookie-save{grid-column:1/-1}
+}
+
+</style><!-- Google tag (gtag.js) · carga condicionada al consentimiento -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+
+(function(){
+  const CONSENT_KEY = 'gestyvia_cookie_consent';
+  const GA_ID = 'G-5QS519BBFH';
+
+  function loadAnalytics(){
+    if(document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(script);
+    gtag('js', new Date());
+    gtag('config', GA_ID, { 'anonymize_ip': true });
+  }
+
+  function isBannerVisible(banner){
+    return !!(banner && !banner.hidden);
+  }
+
+  function showBanner(banner){
+    if(!banner) return;
+    banner.hidden = false;
+    document.body.classList.add('cookie-choice-open');
+    requestAnimationFrame(function(){
+      banner.classList.add('is-visible','is-fixed');
+    });
+  }
+
+  function hideBanner(banner){
+    if(!banner) return;
+    banner.classList.remove('is-visible','is-fixed');
+    document.body.classList.remove('cookie-choice-open');
+    setTimeout(function(){ banner.hidden = true; }, 250);
+  }
+
+  function saveConsent(value){
+    try{ localStorage.setItem(CONSENT_KEY, value); }catch(e){}
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const banner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('cookieAccept');
+    const rejectBtn = document.getElementById('cookieReject');
+    const configBtn = document.getElementById('cookieConfig');
+    const preferences = document.getElementById('cookiePreferences');
+    const analyticsToggle = document.getElementById('cookieAnalytics');
+    const saveBtn = document.getElementById('cookieSave');
+
+    let saved = null;
+    try{ saved = localStorage.getItem(CONSENT_KEY); }catch(e){}
+
+    if(saved === 'accepted'){
+      if(banner) banner.hidden = true;
+      loadAnalytics();
+      return;
+    }
+
+    if(saved === 'rejected'){
+      if(banner) banner.hidden = true;
+      return;
+    }
+
+    if(banner){
+      showBanner(banner);
+      banner.addEventListener('click', function(e){ e.stopPropagation(); });
+    }
+
+    if(acceptBtn){
+      acceptBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        saveConsent('accepted');
+        loadAnalytics();
+        hideBanner(banner);
+      });
+    }
+
+    if(rejectBtn){
+      rejectBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        saveConsent('rejected');
+        hideBanner(banner);
+      });
+    }
+
+    if(configBtn && preferences){
+      configBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        preferences.hidden = !preferences.hidden;
+        configBtn.setAttribute('aria-expanded', preferences.hidden ? 'false' : 'true');
+      });
+    }
+
+    if(saveBtn){
+      saveBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if(analyticsToggle && analyticsToggle.checked){
+          saveConsent('accepted');
+          loadAnalytics();
+        }else{
+          saveConsent('rejected');
+        }
+        hideBanner(banner);
+      });
+    }
+  });
+})();
+window.gestyviaCookieChoicePending = function(){
+  const banner = document.getElementById('cookieBanner');
+  return !!(banner && !banner.hidden && banner.classList.contains('is-visible'));
+};
+</script></head><body id="top">
+
+<div aria-live="polite" class="cookie-banner" hidden id="cookieBanner" role="dialog" aria-label="Aviso de cookies">
+  <h2>Cookies</h2>
+  <p>Utilizamos cookies propias y de terceros para analizar el uso del sitio de forma anónima. Puede aceptar, rechazar o configurar las cookies no esenciales. <a href="cookies.html">Política de cookies</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn accept" id="cookieAccept" type="button">Aceptar</button>
+    <button class="cookie-btn reject" id="cookieReject" type="button">Rechazar</button>
+    <button aria-expanded="false" aria-controls="cookiePreferences" class="cookie-btn configure" id="cookieConfig" type="button">Configurar</button>
+  </div>
+  <div class="cookie-preferences" hidden id="cookiePreferences">
+    <div class="cookie-option">
+      <div>
+        <strong>Cookies técnicas necesarias</strong>
+        <small>Permiten el funcionamiento básico del sitio web y no pueden desactivarse desde este panel.</small>
+      </div>
+      <span class="cookie-pill">Siempre activas</span>
+    </div>
+    <label class="cookie-option" for="cookieAnalytics">
+      <div>
+        <strong>Cookies de análisis</strong>
+        <small>Nos ayudan a conocer el uso del sitio de forma anónima para mejorar la web.</small>
+      </div>
+      <input id="cookieAnalytics" type="checkbox"/>
+    </label>
+    <button class="cookie-btn accept cookie-save" id="cookieSave" type="button">Guardar preferencias</button>
+  </div>
+</div>
+
+<div aria-hidden="true" class="page-transition" id="pageTransition"></div><div class="top-line"></div><div class="overlay" id="overlay"></div><div class="wrapper" id="wrapper"><a class="logo-link" href="marca.html" id="logoLink"><img alt="Gestyvia — automatización inteligente para gestorías, asesorías y despachos" id="logoImg" src="logo-gestyvia.png"/></a><h1 class="tagline" id="tagline">Gestorías · Asesorías · Despachos</h1><a class="enter" href="marca.html" id="enterLink">Conocer más</a></div><div class="gold-line" id="goldLine"></div><script>
+  function navigate() {
+    if (window.gestyviaCookieChoicePending && window.gestyviaCookieChoicePending()) return;
+    const wrapper = document.getElementById('wrapper');
+    const overlay = document.getElementById('overlay');
+    const goldLine = document.getElementById('goldLine');
+    // 1. Wrapper: zoom suave + fade out
+    wrapper.classList.add('exit');
+    goldLine.style.opacity = '0';
+    const premiumTransition = document.querySelector('.gv-page-transition');
+    if (premiumTransition) {
+      premiumTransition.classList.remove('is-entering');
+      premiumTransition.classList.add('is-active');
+    }
+    // 2. Overlay blanco: fade in ligeramente después
+    setTimeout(() => {
+      overlay.classList.add('active');
+    }, 300);
+    // 3. Navegar cuando la transición termina
+    setTimeout(() => {
+      window.location.href = 'marca.html';
+    }, 640);
+  }
+  document.getElementById('logoLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.gestyviaCookieChoicePending && window.gestyviaCookieChoicePending()) return;
+    navigate();
+  });
+  document.getElementById('enterLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.gestyviaCookieChoicePending && window.gestyviaCookieChoicePending()) return;
+    navigate();
+  });
+  document.body.addEventListener('click', (e) => {
+    if (e.target.closest('.cookie-banner')) return;
+    if (window.gestyviaCookieChoicePending && window.gestyviaCookieChoicePending()) return;
+    if (!e.target.closest('a')) navigate();
+  });
+</script>
+<script>
+(function(){
+    const transition = document.querySelector('.gv-page-transition');
+    if(!transition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    window.addEventListener('pageshow', function(){
+        transition.classList.remove('is-active');
+        transition.classList.add('is-entering');
+        setTimeout(function(){transition.classList.remove('is-entering');}, 950);
+    });
+
+    document.addEventListener('click', function(e){
+        if(e.target.closest('.cookie-banner') && !e.target.closest('.cookie-banner a')) return;
+        const link = e.target.closest('a');
+        if(!link) return;
+        const href = link.getAttribute('href');
+        if(!href || href === '#' || href.startsWith('#')) return;
+        if(link.target && link.target !== '_self') return;
+        if(link.hasAttribute('download')) return;
+        if(href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+        let targetUrl;
+        try{ targetUrl = new URL(href, window.location.href); }
+        catch(err){ return; }
+        if(targetUrl.origin !== window.location.origin) return;
+        if(targetUrl.pathname === window.location.pathname && targetUrl.hash) return;
+
+        e.preventDefault();
+        transition.classList.remove('is-entering');
+        transition.classList.add('is-active');
+        setTimeout(function(){ window.location.href = targetUrl.href; }, 640);
+    }, true);
+})();
+</script>
+<script>
+(function(){
+    const transition = document.getElementById('pageTransition');
+
+    window.addEventListener('pageshow', function(){
+        if(!transition) return;
+        transition.classList.remove('active');
+        transition.classList.remove('exit');
+    });
+
+    document.querySelectorAll('a[href]').forEach(function(link){
+        link.addEventListener('click', function(e){
+            const href = link.getAttribute('href');
+
+            if(
+                !href ||
+                href.startsWith('#') ||
+                href.startsWith('mailto:') ||
+                href.startsWith('tel:') ||
+                href.startsWith('http') ||
+                link.target === '_blank' ||
+                link.hasAttribute('download')
+            ){
+                return;
+            }
+
+            e.preventDefault();
+
+            if(transition){
+                transition.classList.add('active');
+            }
+
+            setTimeout(function(){
+                window.location.href = href;
+            }, 1050);
+        });
+    });
+})();
+</script>
+</body></html>
